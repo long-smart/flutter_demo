@@ -1,0 +1,198 @@
+{
+  "id": "1347306",
+  "name": "mercury",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10039709",
+      "name": "撤销",
+      "font_class": "chexiao1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "8312527",
+      "name": "通过",
+      "font_class": "tongguo",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1469247",
+      "name": "loading1",
+      "font_class": "loading",
+      "unicode": "e861",
+      "unicode_decimal": 59489
+    },
+    {
+      "icon_id": "9512545",
+      "name": "编辑",
+      "font_class": "edit",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "584126",
+      "name": "删除",
+      "font_class": "iconfontshanchu",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "8843574",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "9731263",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "6882402",
+      "name": "左",
+      "font_class": "tubiao-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "174879",
+      "name": "锁",
+      "font_class": "suo1",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "181414",
+      "name": "用户",
+      "font_class": "jinlingyingcaiwangtubiao12",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    },
+    {
+      "icon_id": "1138314",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1380813",
+      "name": "包",
+      "font_class": "bao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "1529727",
+      "name": "配置",
+      "font_class": "peizhi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2072327",
+      "name": "感叹号",
+      "font_class": "gantanhao",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "2258726",
+      "name": "右箭头",
+      "font_class": "arrow-right",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3089425",
+      "name": "日志",
+      "font_class": "rizhi",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "4079161",
+      "name": "配置",
+      "font_class": "peizhi1",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "5039107",
+      "name": "资源管理",
+      "font_class": "Resourcemanagement",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "5512104",
+      "name": "分析",
+      "font_class": "fenxi1",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "5520375",
+      "name": "仪表盘",
+      "font_class": "yibiaopan",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "6252146",
+      "name": "列表",
+      "font_class": "system_cache_list",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8846261",
+      "name": "重启",
+      "font_class": "zhongqi",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "9768772",
+      "name": "开关",
+      "font_class": "kaiguan",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1118167",
+      "name": "设备隐患分析",
+      "font_class": "fenxi",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1388145",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "1621660",
+      "name": "锁",
+      "font_class": "suo",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "7524619",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    }
+  ]
+}
