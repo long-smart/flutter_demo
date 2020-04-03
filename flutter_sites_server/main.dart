@@ -3,7 +3,7 @@ import 'dart:io';
 import 'data.dart';
 
 void main() async {
-  var requestServer = await HttpServer.bind('192.168.1.5', 6666);
+  var requestServer = await HttpServer.bind('192.168.1.4', 6666);
   print('http服务器启动');
 
   await for (HttpRequest request in requestServer) {
@@ -38,6 +38,13 @@ void handleGet(HttpRequest request) {
     request.response
       ..statusCode = HttpStatus.ok
       ..write(jsonEncode(news))
+      ..close();
+  } else if (action == 'contactCompany') {
+    var msg = request.uri.queryParameters['msg'];
+    print(msg);
+    request.response
+      ..statusCode = HttpStatus.ok
+      ..write('提交成功：$msg')
       ..close();
   }
 }
