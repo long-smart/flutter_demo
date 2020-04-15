@@ -5,13 +5,10 @@ import 'package:flutter20_shop/page/category_page.dart';
 import 'package:flutter20_shop/page/cart_page.dart';
 import 'package:flutter20_shop/page/meber_page.dart';
 import 'package:flutter_screenutil/screenutil.dart';
+import 'package:flutter20_shop/provide/currentPageIndex.dart';
+import 'package:provide/provide.dart';
 
-class IndexPage extends StatefulWidget {
-  @override
-  _IndexPageState createState() => _IndexPageState();
-}
-
-class _IndexPageState extends State<IndexPage> {
+class IndexPage extends StatelessWidget {
   final List<BottomNavigationBarItem> bottomTabs = [
     BottomNavigationBarItem(
       icon: Icon(CupertinoIcons.home),
@@ -35,39 +32,31 @@ class _IndexPageState extends State<IndexPage> {
     HomePage(),
     CategoryPage(),
     CartPage(),
-    MeberPage()
+    MeberPage(),
   ];
-
-  int _currentIndex = 0;
-  Widget _currentPage;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    _currentPage = pageList[_currentIndex];
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context, width: 750, height: 1334);
-    return Scaffold(
-      backgroundColor: Color.fromRGBO(244, 245, 245, 1.0),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: _currentIndex,
-        items: bottomTabs,
-        onTap: (int index) {
-          setState(() {
-            _currentIndex = index;
-            _currentPage = pageList[index];
-          });
-        },
-      ),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: pageList,
-      ),
+    return Provide<CurrentIndexProvide>(
+      builder: (context, child, val) {
+        int currentIndex = Provide.value<CurrentIndexProvide>(context).currentIndex;
+        return Scaffold(
+          backgroundColor: Color.fromRGBO(244, 245, 245, 1.0),
+          bottomNavigationBar: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            currentIndex: currentIndex,
+            items: bottomTabs,
+            onTap: (int index) {
+              Provide.value<CurrentIndexProvide>(context).changeIndex(index);
+            },
+          ),
+          body: IndexedStack(
+            index: currentIndex,
+            children: pageList,
+          ),
+        );
+      },
     );
   }
 }
